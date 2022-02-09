@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Nunito sans";
+    src: url('fonts/NunitoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Yeseva one";
+    src: url('fonts/YesevaOne-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.subtitle {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.desktop-1 {
+    background-color: #131313;
+}
+
+.fixed-container {
+    width: 1440px;
+    height: 783px;
+    background-color: #131313;
+    margin: 0 auto;
+    /* height: 783px; */
+}
+
+.projects-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 107px;
+    padding-right: 191.55px;  
+ }
+ 
+ .projects-navigation__item {
+    list-style-type: none;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 60.5px;
+    
+   
+ }
+
+
+ 
+ .projects-navigation__item a {
+     text-decoration: none; 
+     color: rgba(255, 255, 255, 0.3);  
+ }
+ 
+ .projects-navigation__item:hover {
+     color:  #E3B873;
+     text-decoration: underline 1px solid currentColor;
+     cursor: pointer;
+ }
+ 
+ .projects-aside {
+     display: flexbox;
+     flex-direction: column;
+     width: 530px;
+     padding-left: 134.45px;
+     
+ }
+ 
+ .projects-aside__subtitle {
+     font-size: 27px;
+     line-height: 37px;
+     letter-spacing: -0.07em;
+     text-transform: uppercase;
+     color: #E3B873;
+     text-align: left;
+     margin-top: 45px;
+ }
+
+ .projects-aside__subtitle__line {
+     margin-left: 161px;
+     margin-top: -16px;
+ }
+ 
+ .projects-aside__paragraph {
+     font-size: 14px;
+     line-height: 27px;
+     color: #FFFFFF;
+     text-align: left;
+     margin: 34px 0 42px 0;
+ }
+ 
+ .projects-aside__city {
+     width: 476px;
+     height: 201px;
+ }
+ 
+ .projects-aside__city__paragraph {
+     font-size: 13px;
+     line-height: 21px;
+     color: #FFFFFF;
+     text-align: left;
+ }
+ 
+ .projects-aside__city__subtitle__table {
+     font-size: 18px;
+     line-height: 25px;
+     text-transform: uppercase;
+     text-align: left;
+     color: #E3B873;
+     height: 22px;
+ }
+ 
+ .projects-aside__city__paragraph__table {
+     font-size: 13px;
+     line-height: 21px;
+     text-align: left;
+     color: #FFFFFF;  
+     padding: 0 auto; 
+     height: 32px;
+ }
+
+ .projects-aside__city {
+     display: flex;
+     flex-flow: row wrap;
+ }
+
+ .projects-aside__city__location {
+     width: 213px;
+ }
+
+ .projects-aside__city__paragraph__table {
+     margin-top: 9px;
+ }
+
+ /* Слайдер */
+ 
+ .slider-image {
+     width: 679px;
+     height: 482px;
+     position: relative;
+     left: 625px;
+     top: -480px;
+ }
+
+ .project-aside__slider {
+     padding-top: 45px;
+     width: 199px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .slider-image .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+ }
+
+ .slider-image .image.active {
+     opacity: 1;
+ }
+
+ .slider-arrow {
+     cursor: pointer;   
+ }
+
+ .slider-arrows {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+
+    width: 35%;
+    left: 107px;
+}
+ .slider__dots-item {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);;
+    border-radius: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+
+  .slider__dots-item:hover, .slider__dots-item.active {
+    background: #fff;
+    border-radius: 30px;
+  }
+
+  .projects-navigation li.active {
+    color:  #E3B873;
+    text-decoration: underline 1px solid currentColor; 
+  }
+
